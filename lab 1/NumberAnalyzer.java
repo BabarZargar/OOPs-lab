@@ -72,8 +72,6 @@ public class NumberAnalyzer {
         int y = sc.nextInt();
         int z = sc.nextInt();
         obj.analyze(x, y, z);
-
-        sc.close();
     }
     
 }
