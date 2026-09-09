@@ -37,12 +37,10 @@ class Manager extends Employee{
         this.bonus = bonus;
     }
 
-    @Override
     public double calculateSalary(){
         return baseSalary + bonus;
     }
 
-    @Override
     public void displayDetails() {
         System.out.println("\nManager");
         System.out.println("Manager ID: " + managerId);
@@ -60,12 +58,10 @@ class Teaching extends Employee{
         this.payPerCourse = payPerCourse;
     }
 
-    @Override
     public double calculateSalary() {
         return super.calculateSalary() + (numberOfCourses * payPerCourse);
     }
 
-    @Override
     public void displayDetails() {
         System.out.println("\nTeaching");
         System.out.println("no. of courws: " + numberOfCourses);
@@ -83,11 +79,9 @@ class NonTeaching extends Employee{
         this.days = days;
     }
 
-    @Override
     public double calculateSalary() {
         return super.calculateSalary() + (days*3000);
     }
-    @Override
     public void displayDetails() {
         System.out.println("\nNonTeaching");
         System.out.println("section: " + section);
@@ -107,12 +101,10 @@ class OutSourced extends Employee{
         this.hours = hours;
     }
 
-    @Override
     public double calculateSalary() {
         return baseSalary + (hours * perhour);
     }
 
-    @Override
     public void displayDetails() {
         System.out.println("\nOut sourced");
         System.out.println("tenure in months: " + tenure);
