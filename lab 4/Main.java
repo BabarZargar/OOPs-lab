@@ -30,7 +30,7 @@ class Manager extends Employee{
     }
 
     void calculateSalary(){
-        System.out.println("manager with id: " + id + "has salary = 80000");
+        System.out.println("manager with id: " + id + " has salary = 80000");
     }
 }
 
@@ -48,7 +48,7 @@ class Developer extends Employee{
     }
 
     void calculateSalary(){
-        System.out.println("developer who has done total courses: " + "has salary = 100000");
+        System.out.println("developer who has done total courses: " + courses + " has salary = 100000");
     }
 }
 
